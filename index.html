@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoInvesto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="logo">
+            <div class="logo">GoInvesto</div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#">Features</a>
+            <a href="#">About Us</a>
+            <a href="#">Events</a>
+            <a href="#">Blog</a>
+        </nav>
+
+        <div class="auth-buttons">
+            <button class="get-started">Get Started</button>
+            <button class="sign-in">Sign In</button>
+        </div>
+
+        <!-- Hamburger Menu -->
+        <div class="hamburger-menu" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">Comprehensive Networking Hub </p>
+            <h1 class="animated-text">Connect, Collaborate, Succeed with GoInvesto</h1>
+            <p class="description animated-text">
+                Our platform bridges the gap between startups, investors, and ecosystem enablers, offering real-time
+                data
+                insights and CRM functionalities to streamline your operations.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn-primary">Get Started</button>
+                <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+        <div class="hero-media">
+
+            <!-- Alternatively, you can use a GIF -->
+            <img src="hero section.gif" alt="GIF Animation" class="hero-gif">
+        </div>
+    </section>
+
+
+    <section class="features">
+        <div class="features-wrapper">
+            <div class="features-header">
+                <span class="subtitle">WHY CHOOSE US</span>
+                <h2>We take your business to the next level</h2>
+                <p>
+                    GoInvesto offers a comprehensive networking platform designed to connect startups, investors, and
+                    ecosystem enablers. Our features include real-time data insights, advanced CRM functionalities, and
+                    efficient task
+                    management tools, all tailored to streamline your operations.
+                </p>
+            </div>
+            <div class="feature-cards">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="real time data.jpg" alt="Data Insights">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Real-Time Data Insights</h3>
+                        <p>Gain access to actionable insights with our real-time data analytics, helping you make
+                            informed
+                            decisions swiftly.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="CRM capabilities.jpg" alt="CRM Capabilities">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Advanced CRM Capabilities</h3>
+                        <p>Manage your relationships efficiently with CRM tools designed to enhance collaboration among
+                            stakeholders.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="task management.jpg" alt="Task Management">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Efficient Task Management</h3>
+                        <p>Streamline your operations with task management features, allowing you to track progress
+                            seamlessly.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <img src="collaboration.jpg" alt="Collaboration">
+                    </div>
+                    <div class="feature-content">
+                        <h3>Enhanced Collaboration</h3>
+                        <p>Foster better communication and teamwork among startups and investors with collaboration
+                            features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="about">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>“We’re looking to enable better care for our users…”</h2>
+                <p>Building bridges between startups, investors, and enablers with real-time insights and innovative
+                    solutions for transformative impact.</p>
+                <p>— GoInvesto</p>
+            </div>
+            <div class="about-image">
+                <img src="about sectiongif.gif" alt="GoInvesto Design">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Events Section -->
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-list">
+            <div class="event-item card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Startup Networking Meetup</h3>
+                <p>Join us for an exciting networking opportunity with other startups and investors to explore
+                    partnerships and investment opportunities.</p>
+                <span>Date: January 15, 2025</span>
+            </div>
+            <div class="event-item card">
+                <i class="fas fa-calendar-alt"></i>
+                <h3>Investor Pitch Day</h3>
+                <p>Pitch your startup to top investors and receive valuable feedback to accelerate your growth.</p>
+                <span>Date: February 20, 2025</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Startups Section -->
+    <section class="startups">
+        <h2>Startups</h2>
+        <div class="card">
+            <p>Explore a variety of innovative startups in various industries, connect, and collaborate for mutual
+                growth.</p>
+            <i class="fas fa-lightbulb"></i>
+        </div>
+    </section>
+
+    <!-- Investors Section -->
+    <section class="investors">
+        <h2>Investors</h2>
+        <div class="card">
+            <p>Find potential investment opportunities with promising startups and be part of the next big success
+                story.</p>
+            <i class="fas fa-chart-line"></i>
+        </div>
+    </section>
+
+    <!-- Incubators Section -->
+    <section class="incubators">
+        <h2>Incubators</h2>
+        <div class="card">
+            <p>Connect with leading incubators to gain access to resources, mentorship, and guidance on scaling your
+                startup.</p>
+            <i class="fas fa-business-time"></i>
+        </div>
+    </section>
+
+    <!-- Government Schemes Section -->
+    <section class="government-schemes">
+        <h2>Government Schemes</h2>
+        <div class="card">
+            <p>Learn about various government schemes and funding options available to support your startup journey.</p>
+            <i class="fas fa-university"></i>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>About GoInvesto</h3>
+                <p>GoInvesto is a comprehensive hub for the startup ecosystem, enabling seamless connections and
+                    collaboration between startups, investors, and ecosystem enablers.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#startups">Startups</a></li>
+                    <li><a href="#investors">Investors</a></li>
+                    <li><a href="#incubators">Incubators</a></li>
+                    <li><a href="#government-schemes">Government Schemes</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Follow Us</h3>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <p class="footer-copyright">&copy; 2024 GoInvesto. All rights reserved.</p>
+    </footer>
+
+    <!-- Additional sections go here (About, Events, Blog, Footer) -->
+</body>
+
+</html>

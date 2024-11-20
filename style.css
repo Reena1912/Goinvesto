@@ -1,0 +1,630 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Global Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 60px;
+}
+
+.feature-item i {
+    font-size: 2rem;
+    /* Adjust size */
+    color: #6c63ff;
+    /* Change color to match GoInvesto's theme */
+    margin-bottom: 1rem;
+}
+
+/* Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.logo-container .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav.navbar {
+    display: flex;
+    gap: 1.5rem;
+    transition: max-height 0.3s ease;
+}
+
+nav.navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    transition: color 0.3s ease;
+}
+
+nav.navbar a:hover {
+    color: #e63946;
+}
+
+.auth-buttons .get-started,
+.auth-buttons .sign-in {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+
+}
+
+.auth-buttons .get-started {
+    background-color: #e63946;
+    color: white;
+}
+
+.auth-buttons .sign-in {
+    background-color: white;
+    color: #e63946;
+    border: 2px solid #e63946;
+
+}
+
+
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+}
+
+.hamburger-menu div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav.navbar {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: white;
+        padding: 1rem;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    nav.navbar.active {
+        display: flex;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+}
+
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffffff;
+    /* White background */
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90vh;
+    /* Make the section larger */
+}
+
+/* Hero Content */
+.hero-content {
+    max-width: 50%;
+    /* Occupies half the screen */
+}
+
+.hero .subtitle {
+    font-size: 1rem;
+    color: #e63946;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    /* Larger font size */
+    color: #1d3557;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    animation: fadeInUp 2s ease;
+
+}
+
+.hero .description {
+    font-size: 1.5rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+    animation: fadeInUp 3s ease;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.hero-buttons .btn-primary,
+.hero-buttons .btn-secondary {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero-buttons .btn-primary {
+    background-color: #e63946;
+    color: #fff;
+}
+
+.hero-buttons .btn-primary:hover {
+    background-color: #d62839;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #f1f1f1;
+    color: #e63946;
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: #e8e8e8;
+    color: #d62839;
+}
+
+/* Hero Media (Video/GIF Section) */
+.hero-media {
+    max-width: 45%;
+    /* Occupies the rest of the screen */
+    text-align: right;
+}
+
+.hero-video,
+.hero-gif {
+    width: 100%;
+    /* Make the media fit its container */
+    height: auto;
+    border-radius: 10px;
+    /* Optional: Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    /* Optional: Add a subtle shadow */
+}
+
+/* Text Animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-media {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+
+    }
+
+    .hero .description {
+        font-size: 1.2rem;
+    }
+
+    .hero-buttons button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+}
+
+/* Feature section */
+.subtitle {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ff3366;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.features {
+    padding: 6rem 2rem;
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+}
+
+.features-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features-header {
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    text-align: center;
+    /* Align to the left */
+}
+
+.features-header h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a1f36;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.features-header p {
+    font-size: 1.125rem;
+    color: #4f5874;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.feature-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    /* Single column by default */
+    gap: 3rem;
+    /* Increase gap between cards */
+}
+
+.feature-item {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    /* Ensure image and content fit inside the card */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    flex-direction: row;
+    /* Ensure image and content are side-by-side */
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+}
+
+.feature-icon {
+    flex: 1;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.feature-content {
+    flex: 1;
+    /* Take up half the card width */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-content h3 {
+    font-size: 1.75rem;
+    /* Slightly larger heading */
+    font-weight: 600;
+    color: #1a1f36;
+    margin-bottom: 1rem;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: #4f5874;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+}
+
+@media (min-width: 768px) {
+    .feature-cards {
+        grid-template-columns: 1fr 1fr;
+        /* Two columns on larger screens */
+
+
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: 4rem 1.5rem;
+    }
+
+    .feature-item {
+        flex-direction: column;
+        /* Stack image and content vertically on smaller screens */
+    }
+
+    .feature-icon {
+        margin-bottom: 1.5rem;
+    }
+
+    .features-header h2 {
+        font-size: 2rem;
+    }
+
+
+}
+
+/* General Section Styling */
+section {
+    padding: 4rem 0;
+    text-align: center;
+    background-color: #f4f4f9;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+    text-align: left;
+}
+
+section p {
+    color: #000000;
+}
+
+/* Card Styling */
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card i {
+    font-size: 2rem;
+    color: #6c63ff;
+    margin-bottom: 1rem;
+}
+
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    background-color: #ffffff;
+    /* A subtle neutral background for blending */
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    width: 100%;
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    gap: 40px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: left;
+    font-family: "Yellix", sans-serif;
+    /* Updated font for h2 */
+    font-size: 38px;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    /* Keep the existing size */
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    /* Modern and clean fonts */
+    font-weight: 300;
+    /* Light font weight for a sleek look */
+    color: #333;
+    /* Slightly darker gray for good contrast */
+    line-height: 1.4;
+    /* Adjust spacing between lines */
+    letter-spacing: 0.5px;
+    /* Slight letter spacing for clarity */
+    margin-bottom: 20px;
+}
+
+
+.about-text p {
+    font-size: 1.1rem;
+    font-family: "Arial", sans-serif;
+    /* Use a clean font for the p tag */
+    color: #444;
+    line-height: 1.8;
+    font-weight: bold;
+    /* Bold text for emphasis */
+    text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.1);
+    /* Slight shadow for depth */
+    margin-bottom: 15px;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for a floating effect */
+    background-color: #ffffff;
+    /* Match section background */
+    padding: 10px;
+}
+
+
+/* Events Section */
+.events .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.event-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.event-item {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.event-item:hover {
+    transform: translateY(-5px);
+}
+
+.event-item i {
+    font-size: 1.5rem;
+    color: #6c63ff;
+    margin-bottom: 0.5rem;
+}
+
+.event-item h3 {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+}
+
+/* Icons for Each Section */
+.startups .card,
+.investors .card,
+.incubators .card,
+.government-schemes .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin: 0.5rem 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 0.5rem;
+    font-size: 1.5rem;
+}
