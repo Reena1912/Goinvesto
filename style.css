@@ -146,7 +146,7 @@ nav.navbar a:hover {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
     /* White background */
-    max-width: 1200px;
+    max-width: 1500px;
     margin: 0 auto;
     height: 90vh;
     /* Make the section larger */
@@ -386,8 +386,8 @@ nav.navbar a:hover {
     font-size: 1rem;
     color: #4f5874;
     line-height: 1.6;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
 
 }
 
@@ -536,57 +536,143 @@ section p {
     background-color: #ffffff;
     /* Match section background */
     padding: 10px;
+
 }
 
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f5f2;
+}
 
-/* Events Section */
-.events .card {
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f5f2;
+}
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f5f2;
+}
+
+.contact-section {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    padding: 2rem 1rem;
 }
 
-.event-list {
+.contact-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
+    max-width: 900px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
-.event-item {
-    background: #fff;
+.contact-map {
+    flex: 1 1 50%;
+    height: auto;
+    /* Matches the height of the contact form */
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.contact-form {
+    flex: 1 1 50%;
     padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 80%;
-    max-width: 500px;
-    text-align: left;
 }
 
-.event-item:hover {
-    transform: translateY(-5px);
+.contact-form h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #000;
 }
 
-.event-item i {
-    font-size: 1.5rem;
-    color: #6c63ff;
-    margin-bottom: 0.5rem;
+.contact-form .form-group {
+    margin-bottom: 1rem;
 }
 
-.event-item h3 {
-    font-size: 1.25rem;
-    margin-top: 0.5rem;
+.contact-form label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #333;
+    display: block;
+    margin-bottom: 0.3rem;
 }
 
-/* Icons for Each Section */
-.startups .card,
-.investors .card,
-.incubators .card,
-.government-schemes .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    outline: none;
+    padding: 0.2rem 0;
 }
+
+.contact-form hr {
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin: 0.2rem 0;
+}
+
+.contact-form .btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.contact-form .btn:hover {
+    background-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-map {
+        flex: 1 1 100%;
+        height: 300px;
+    }
+
+    .contact-form {
+        flex: 1 1 100%;
+        padding: 1rem;
+    }
+}
+
+
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f5f2;
+    /* Matches the image background */
+}
+
+
+
 
 /* Footer Styling */
 .footer {
@@ -596,32 +682,15 @@ section p {
     text-align: center;
 }
 
-.footer-content {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
 
-.footer-about,
-.footer-links,
+
+
+
 .footer-social {
     max-width: 300px;
     margin: 0 auto;
 }
 
-.footer-links ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-links ul li {
-    margin: 0.5rem 0;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-}
 
 .footer-social a {
     color: #fff;

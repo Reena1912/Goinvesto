@@ -7,7 +7,9 @@
     <title>GoInvesto</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
     <script src="script.js"></script>
 
@@ -23,13 +25,17 @@
 
         <nav class="navbar">
             <a href="#">Features</a>
-            <a href="#">About Us</a>
+            <a href="#">StartUps</a>
+            <a href="#">Investors</a>
+            <a href="#">Incubatos</a>
+            <a href="#">Government Schemes</a>
             <a href="#">Events</a>
-            <a href="#">Blog</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact Us</a>
         </nav>
 
         <div class="auth-buttons">
-            <button class="get-started">Get Started</button>
+            <button class="get-started">Sign Up</button>
             <button class="sign-in">Sign In</button>
         </div>
 
@@ -81,9 +87,7 @@
                     </div>
                     <div class="feature-content">
                         <h3>Real-Time Data Insights</h3>
-                        <p>Gain access to actionable insights with our real-time data analytics, helping you make
-                            informed
-                            decisions swiftly.</p>
+                        <p>Unlock actionable insights with real-time analytics for swift, informed decisions.</p>
                     </div>
                 </div>
                 <div class="feature-item">
@@ -92,8 +96,7 @@
                     </div>
                     <div class="feature-content">
                         <h3>Advanced CRM Capabilities</h3>
-                        <p>Manage your relationships efficiently with CRM tools designed to enhance collaboration among
-                            stakeholders.</p>
+                        <p>Streamline collaboration with CRM tools for efficient stakeholder management.</p>
                     </div>
                 </div>
                 <div class="feature-item">
@@ -102,8 +105,8 @@
                     </div>
                     <div class="feature-content">
                         <h3>Efficient Task Management</h3>
-                        <p>Streamline your operations with task management features, allowing you to track progress
-                            seamlessly.</p>
+                        <p>Seamlessly track progress and streamline operations with advanced task management features.
+                        </p>
                     </div>
                 </div>
                 <div class="feature-item">
@@ -112,7 +115,7 @@
                     </div>
                     <div class="feature-content">
                         <h3>Enhanced Collaboration</h3>
-                        <p>Foster better communication and teamwork among startups and investors with collaboration
+                        <p>Enhance communication and teamwork between startups and investors with powerful collaboration
                             features.</p>
                     </div>
                 </div>
@@ -136,94 +139,59 @@
         </div>
     </section>
 
-
-
-    <!-- Events Section -->
-    <section class="events">
-        <h2>Upcoming Events</h2>
-        <div class="event-list">
-            <div class="event-item card">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Startup Networking Meetup</h3>
-                <p>Join us for an exciting networking opportunity with other startups and investors to explore
-                    partnerships and investment opportunities.</p>
-                <span>Date: January 15, 2025</span>
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-map">
+                <!-- Google Maps Embed API centered on India -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4887189.01781953!2d77.61923425286885!3d20.59368400422071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c0ab26a764e1%3A0x8b5175b4981b27f!2sIndia!5e0!3m2!1sen!2sin!4v1695936626849!5m2!1sen!2sin"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
-            <div class="event-item card">
-                <i class="fas fa-calendar-alt"></i>
-                <h3>Investor Pitch Day</h3>
-                <p>Pitch your startup to top investors and receive valuable feedback to accelerate your growth.</p>
-                <span>Date: February 20, 2025</span>
+            <div class="contact-form">
+                <h2>Contact Us</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" placeholder="Enter your full name">
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <hr>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="2" placeholder="Write your message"></textarea>
+                        <hr>
+                    </div>
+                    <button type="submit" class="btn">Contact Us</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Startups Section -->
-    <section class="startups">
-        <h2>Startups</h2>
-        <div class="card">
-            <p>Explore a variety of innovative startups in various industries, connect, and collaborate for mutual
-                growth.</p>
-            <i class="fas fa-lightbulb"></i>
-        </div>
-    </section>
 
-    <!-- Investors Section -->
-    <section class="investors">
-        <h2>Investors</h2>
-        <div class="card">
-            <p>Find potential investment opportunities with promising startups and be part of the next big success
-                story.</p>
-            <i class="fas fa-chart-line"></i>
-        </div>
-    </section>
 
-    <!-- Incubators Section -->
-    <section class="incubators">
-        <h2>Incubators</h2>
-        <div class="card">
-            <p>Connect with leading incubators to gain access to resources, mentorship, and guidance on scaling your
-                startup.</p>
-            <i class="fas fa-business-time"></i>
-        </div>
-    </section>
 
-    <!-- Government Schemes Section -->
-    <section class="government-schemes">
-        <h2>Government Schemes</h2>
-        <div class="card">
-            <p>Learn about various government schemes and funding options available to support your startup journey.</p>
-            <i class="fas fa-university"></i>
-        </div>
-    </section>
+
+
+
+
+
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-about">
-                <h3>About GoInvesto</h3>
-                <p>GoInvesto is a comprehensive hub for the startup ecosystem, enabling seamless connections and
-                    collaboration between startups, investors, and ecosystem enablers.</p>
-            </div>
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#events">Events</a></li>
-                    <li><a href="#startups">Startups</a></li>
-                    <li><a href="#investors">Investors</a></li>
-                    <li><a href="#incubators">Incubators</a></li>
-                    <li><a href="#government-schemes">Government Schemes</a></li>
-                </ul>
-            </div>
-            <div class="footer-social">
-                <h3>Follow Us</h3>
-                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
-            </div>
+
+
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
         </div>
+
         <p class="footer-copyright">&copy; 2024 GoInvesto. All rights reserved.</p>
     </footer>
 
